@@ -1,5 +1,5 @@
 /**
- * Comp132Lab5
+ * Lab5
  * This program determines the next days date. It takes in day/month/year fro
  * user input and parses them, then checks for errors, then finds the next
  * day's date. It uses switch and if statements.
@@ -11,14 +11,14 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class comp132Lab5 extends JFrame implements ActionListener {
+public class Lab5 extends JFrame implements ActionListener {
 
     private JButton okButton; // Here we create all the GUI elements
     private JTextField dayField, monthField, yearField;
     private JLabel dayLabel, monthLabel, yearLabel;
     
     public static void main(String[] args) {
-        comp132Lab5 paper = new comp132Lab5();
+        Lab5 paper = new Lab5();
         paper.setSize(400,100); // Setting up the pane
         paper.createGUI();
         paper.show();

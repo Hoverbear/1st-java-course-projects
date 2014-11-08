@@ -4,7 +4,7 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.util.*;
 
-public class Comp132Lab6 extends JFrame implements ActionListener {
+public class Lab6 extends JFrame implements ActionListener {
 
     private JButton button;
     private JPanel panel;
@@ -13,7 +13,7 @@ public class Comp132Lab6 extends JFrame implements ActionListener {
     // 251 so we can see the borders on each box.
 
     public static void main(String[] args) {
-        Comp132Lab6 frame = new Comp132Lab6();
+        Lab6 frame = new Lab6();
         frame.setSize(325, 350);
         frame.createGUI();
         frame.setVisible(true);
@@ -123,7 +123,7 @@ public class Comp132Lab6 extends JFrame implements ActionListener {
 // Understand it.
 class MyPanel extends JPanel {
 
-    Comp132Lab6 o = new Comp132Lab6();
+    Lab6 o = new Lab6();
 
     @Override
     public void paintComponent(Graphics g) {

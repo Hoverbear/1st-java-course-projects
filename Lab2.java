@@ -1,5 +1,5 @@
 /*
- * Comp132Lab2.java
+ * Lab2.java
  * @author  Andrew Hobden
  * Created on September 17th, 2010 11:37 AM
  * Purpose: Pretend to be a vending machine.
@@ -9,13 +9,13 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class Comp132Lab2 extends JFrame
+public class Lab2 extends JFrame
 implements ActionListener {
 
   private JButton button;  // We like to make people do extra work
 
   public static void main(String[] args) {
-    Comp132Lab2 frame = new Comp132Lab2();
+    Lab2 frame = new Lab2();
     frame.setSize(400, 300);
     frame.createGUI();
     frame.setVisible(true);

@@ -1,5 +1,5 @@
 /*
- * Comp132Lab8
+ * Lab8
  * This program is mean to demonstrate working with arrays, handling multiple
  * inputs, using classes, using loops, and using if statements. It accepts use
  * input through buttons and text fields.
@@ -14,7 +14,7 @@ import javax.swing.*;
 import java.util.*;
 
 
-public class comp132Lab8 extends JFrame implements ActionListener {
+public class Lab8 extends JFrame implements ActionListener {
 
     private JButton fillButton, resetButton, displayButton, displayBackButton,
             setElementButton, findSmallestButton, findLargestButton,
@@ -24,10 +24,10 @@ public class comp132Lab8 extends JFrame implements ActionListener {
     private JTextField field1, field2, field3, field4, field5, field6;
     /* These are initialized outside of createGUI because there is only one */
     private JTextArea output = new JTextArea(10, 45);
-    private comp132Lab8Array array = new comp132Lab8Array();
+    private Lab8Array array = new Lab8Array();
 
     public static void main(String[] args) {
-        comp132Lab8 frame = new comp132Lab8();
+        Lab8 frame = new Lab8();
         frame.setSize(520, 500);
         frame.createGUI();
         frame.setVisible(true);
@@ -43,7 +43,7 @@ public class comp132Lab8 extends JFrame implements ActionListener {
         Container window = getContentPane();
         window.setLayout(new FlowLayout(FlowLayout.LEFT));
         window.add(output);
-        
+
         elemLabel1 = new JLabel("Element:");
         elemLabel2 = new JLabel("Value:");
         getLabel1 = new JLabel("Element:");
@@ -79,7 +79,7 @@ public class comp132Lab8 extends JFrame implements ActionListener {
         window.add(displayBackButton); // 4
         window.add(sumButton); // 10
         window.add(Box.createHorizontalStrut(20000));
-        
+
         window.add(setElementButton); // 5
         window.add(elemLabel1);
         window.add(field1);
@@ -156,17 +156,17 @@ public class comp132Lab8 extends JFrame implements ActionListener {
     }
 }
 
-/* Default constructor. Creates a new default instance of Comp132Lab8Array The
+/* Default constructor. Creates a new default instance of Lab8Array The
  * default size is 10. The default value is zero (each element of the array
  * will be initialized to zero). */
-class comp132Lab8Array {
+class Lab8Array {
     private int[] array = new int[10];
     Random random = new Random();
-   
-    /* Default constructor. Creates a new default instance Comp132Lab8Array
-     * The default size is 10. The default value is zero (each 
+
+    /* Default constructor. Creates a new default instance Lab8Array
+     * The default size is 10. The default value is zero (each
      * element of the array will be initialized to zero). */
-    public comp132Lab8Array() {
+    public Lab8Array() {
         for (int i=0; i < array.length; i++) {
             array[i] = 0;
         }
@@ -188,7 +188,7 @@ class comp132Lab8Array {
         }
         return count;
     }
-    
+
     /* Display the contents of the internal array in order of lowest index to
      * highest index.  */
     public void display(JTextArea t) {
@@ -209,7 +209,7 @@ class comp132Lab8Array {
         t.append("\n");
     }
 
-    /* Puts random values into this Comp132Array object. Each element of the
+    /* Puts random values into this Array object. Each element of the
      * internal array will be filled with a random number between 0 and 100;*/
     public void fillArray() {
         for (int i = 0; i < array.length; i++) {
@@ -278,8 +278,8 @@ class comp132Lab8Array {
             array[i] = 0;
         }
     }
-    
-    /* Puts a given value into a specified position of this Comp132Array
+
+    /* Puts a given value into a specified position of this Array
      * object. The element at the specified postion of the internal arraywill
      * be set to the value provided in the parameter num.
      *

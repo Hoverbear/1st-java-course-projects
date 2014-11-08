@@ -11,13 +11,13 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class Comp132Lab3 extends JFrame
+public class Lab3 extends JFrame
   implements ActionListener {
   private JPanel panel;
   private JButton button;
 
   public static void main(String[] args) {
-    Comp132Lab3 frame = new Comp132Lab3();
+    Lab3 frame = new Lab3();
     frame.setSize(350, 400);
     frame.createGUI();
     frame.setVisible(true);

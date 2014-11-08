@@ -2,14 +2,14 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class Comp132lab7 extends JFrame implements ActionListener {
+public class lab7 extends JFrame implements ActionListener {
 
     private JButton button;
     private Student s1 = new Student(); // Initialize our custom class
     private JTextArea output = new JTextArea(10, 15);
 
     public static void main(String[] args) {
-        Comp132lab7 frame = new Comp132lab7();
+        lab7 frame = new lab7();
         frame.setSize(255, 255);
         frame.createGUI();
         frame.setVisible(true);

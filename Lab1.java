@@ -1,5 +1,5 @@
 /*
- * Comp132Lab1.java
+ * Lab1.java
  * @author  Andrew Hobden
  * Created on September 17th, 2010 11:37 AM
  * Purpose: Draw a Happy face.
@@ -9,13 +9,13 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class Comp132Lab1 extends JFrame implements ActionListener{
+public class Lab1 extends JFrame implements ActionListener{
 
   private JButton button;
   private JPanel panel;
 
   public static void main(String[] args) {
-    Comp132Lab1 frame = new Comp132Lab1();
+    Lab1 frame = new Lab1();
     frame.setSize(420,510);
     frame.createGUI();
     frame.setVisible(true);

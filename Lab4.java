@@ -1,5 +1,5 @@
 /*
- * Comp132Lab4
+ * Lab4
  * Purpose: This program emulates the popular Rock paper scissors game. It
  * uses the random function as well as if statements. Once the player enter
  * their choice via button, we find a random choice for the computer and
@@ -12,13 +12,13 @@ import java.awt.event.*;
 import javax.swing.*;
 import java.util.*;
 
-public class Comp132Lab4 extends JFrame implements ActionListener {
+public class Lab4 extends JFrame implements ActionListener {
 
     private JButton rockButton, paperButton, scissorsButton;
     private JTextField textField, textField2;
 
     public static void main(String[] args) {
-        Comp132Lab4 paper = new Comp132Lab4();
+        Lab4 paper = new Lab4();
         paper.setSize(250,150); // Setting up the pane
         paper.createGUI();
         paper.show();

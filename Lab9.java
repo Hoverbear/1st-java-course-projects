@@ -1,4 +1,4 @@
- /* Comp132Lab9
+ /* Lab9
   * This program demonstrates the ability to properly work with the following features of Java:
   * Arrays, Classes, Loops, chars, and Strings.
   * 
@@ -11,7 +11,7 @@ import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
 
-public class comp132Lab9 extends JFrame implements ActionListener {
+public class Lab9 extends JFrame implements ActionListener {
 
     private JButton[] alphabet;		//Array of buttons representing alphabet letters
     private JPasswordField input; //used to input secret word
@@ -19,7 +19,7 @@ public class comp132Lab9 extends JFrame implements ActionListener {
     private Hangman hangman;
 
     public static void main(String arg[]) {
-        comp132Lab9 frame = new comp132Lab9();
+        Lab9 frame = new Lab9();
         frame.setSize(600, 300);
         frame.createGUI();
         frame.setVisible(true);
